@@ -7,10 +7,11 @@ describe('geocoder.reverse', () => {
         expect(result).toEqual({
           id: 3169070,
           name: 'Rome',
-          formatted: 'Rome, Latium, Italy',
+          formatted: 'Rome, Lazio, Italy',
           country: { id: 'IT', name: 'Italy' },
-          admin1: { id: 7, name: 'Latium' },
-          coordinates: { latitude: 41.89193, longitude: 12.51133 }
+          admin1: { id: 7, name: 'Lazio' },
+          coordinates: { latitude: 41.89193, longitude: 12.51133 },
+          tz: 'Europe/Rome'
         });
         done();
       });
